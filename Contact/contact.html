@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../Css/bootstrap.min.css">
+  <link rel="stylesheet" href="../Contact/contact.css">
+</head>
+
+<body>
+  <!-- header part -->
+  <header class="text-white py-2" style="background: linear-gradient(to right, #d10a1e, #fc5454);">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center gap-5">
+        <div> <i class="fa-solid fa-phone"></i>
+          01777308777
+        </div>
+        <div><i class="fa-regular fa-message"></i>
+          info@creativeitinstitute.com
+        </div>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label" for="flexSwitchCheckDefault">English</label>
+      </div>
+    </div>
+  </header>
+
+  <!-- navbar part -->
+  <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#"><img src="../Img/logo.png" alt=""></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto gap-lg-3 text-center">
+          <li class="nav-item">
+            <a class="nav-link active fw-semibold" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold" href="../About/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold" href="./contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold" href="../Faq/faq.html">FAQ</a>
+          </li>
+        </ul>
+        <a href="#" class="btn btn-danger ms-lg-3 mt-3 mt-lg-0">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- contact us -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h1 class="text-center mb-5">Contact Us</h1>
+      <div class="row justify-content-center">
+        <div class="col-lg-6 mb-4">
+
+          <div class="card shadow-sm p-4">
+            <h4 class="mb-3 fw-bold">Send us a message</h4>
+            <form id="contactForm">
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" placeholder="Enter subject" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Type your message"
+                  required></textarea>
+              </div>
+              <button onclick="contactForm()" type="button" class="btn btn-danger w-100">Send Message</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card shadow-sm p-4">
+            <h4 class="mb-3 fw-bold">Contact Info</h4>
+            <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+            <p><strong>Email:</strong> info@example.com</p>
+            <p><strong>Phone:</strong>01989****00</p>
+            <hr>
+            <h5 class="fw-bold">Follow Us</h5>
+            <div class="d-flex gap-3 mt-2">
+              <a href="#" class="btn btn-outline-primary btn-sm">Facebook</a>
+              <a href="#" class="btn btn-outline-info btn-sm">Twitter</a>
+              <a href="#" class="btn btn-outline-danger btn-sm">Instagram</a>
+              <a href="#" class="btn btn-outline-secondary btn-sm">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="bg-dark text-light pt-5 pb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="fw-bold mb-3">MyWebsite</h5>
+          <p>
+            We provide quality training, professional skill development, and tech solutions for students and
+            professionals.
+          </p>
+        </div>
+
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5 class="fw-bold mb-3">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="../index.html" class="text-light text-decoration-none">Home</a></li>
+            <li><a href="../About/about.html" class="text-light text-decoration-none">About</a></li>
+            <li><a href="../Contact/contact.html" class="text-light text-decoration-none">Contact</a></li>
+            <li><a href="../Faq/faq.html" class="text-light text-decoration-none">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="fw-bold mb-3">Contact</h5>
+          <p class="mb-2">Address: Dhaka, Bangladesh</p>
+          <p class="mb-2">Email: jahangirraj31@gmail.com</p>
+          <p class="mb-0">Phone: +880 1742 469 522</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="fw-bold mb-3">Follow Us</h5>
+          <div class="d-flex gap-2">
+            <a href="#" class="btn btn-outline-light btn-sm">Facebook</a>
+            <a href="#" class="btn btn-outline-light btn-sm">LinkedIn</a>
+            <a href="#" class="btn btn-outline-light btn-sm">YouTube</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
